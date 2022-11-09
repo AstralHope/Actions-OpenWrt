@@ -10,6 +10,6 @@
 # Description: OpenWrt DIY script part 2 (After Update feeds)
 #
 
-cp cloud/banner_r86s package/base-files/files/etc/banner
+#cp cloud/banner_r86s package/base-files/files/etc/banner
 # Modify default IP
 sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
