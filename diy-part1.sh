@@ -24,5 +24,5 @@ sed -i 's/OpenWrt/R86S/g' package/base-files/files/bin/config_generate
 sed -i 's/UTC/CST-8/g' package/base-files/files/bin/config_generate
 sed -i '/CST-8/a\\t\tset system.@system[-1].zonename='"'"'Asia\/Shanghai'"'"'' package/base-files/files/bin/config_generate
 sed -i 's/192.168.1.1/192.168.86.1/g' package/base-files/files/bin/config_generate
-sed -i '/brounion-r86s)/{n; d}' target/linux/x86/base-files/etc/board.d/02_network
-sed -i '/brounion-r86s)/aucidef_set_interfaces_lan_wan "eth1 eth2 eth3 eth4" "eth0"' target/linux/x86/base-files/etc/board.d/02_network
+#sed -i '/brounion-r86s)/{n; d}' target/linux/x86/base-files/etc/board.d/02_network
+#sed -i '/brounion-r86s)/aucidef_set_interfaces_lan_wan "eth1 eth2 eth3 eth4" "eth0"' target/linux/x86/base-files/etc/board.d/02_network
